@@ -10,7 +10,7 @@ config()
     mkdir -p ${BUILDDIR}
     cd ${BUILDDIR}
     echo $PWD
-    cmake -DCMAKE_BUILD_TYPE=Release ..
+    cmake -DCMAKE_BUILD_TYPE=Release -DHIREDIS_HEADER=${HIREDIS_DIR}/usr/local/include/hiredis ..
 }
 
 
