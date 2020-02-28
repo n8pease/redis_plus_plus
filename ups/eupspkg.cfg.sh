@@ -28,4 +28,5 @@ install()
 {
     cd ${BUILDDIR}
     make install
+    install_ups
 }
